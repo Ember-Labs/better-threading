@@ -1,9 +1,9 @@
-import { cpSync, rmdirSync } from "fs";
+import { rm } from "fs";
 
 switch(Number(process.argv[2])) {
     case 1:
         try {
-            rmdirSync("./packageSrc/", { recursive: true, force: true });
+            rm(".//", { recursive: true, force: true });
         }
         catch {}
 }

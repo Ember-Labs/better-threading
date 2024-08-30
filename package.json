@@ -12,9 +12,6 @@
         "typescript": "^5.2.2",
         "webpack-cli": "^5.1.4"
     },
-    "scripts": {
-        "build": "node build-helper.js 1 && npx babel --extensions .ts ./src/ --out-dir ./packageSrc && tsc --declaration --emitDeclarationOnly ./src/index.ts --outDir ./packageSrc"
-    },
     "exports": {
         "better-threading": "./packageSrc/index.js"
     },
